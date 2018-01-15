@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+
+{% block body %}
+<a href="/addOrder">Add New Order</a>
+<table class="table table-sm table-dark">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Your Name</th>
+      <th scope="col">Your Order</th>
+      <th scope="col">Adress</th>
+
+    </tr>
+  </thead>
+    {% for i in ordersList %}
+    <tbody>
+    <tr>
+      <th scope="col">{{i.id}}</th>
+
+      <td>{{user.name}}</td>
+      <td>{{i.address}}</td>
+      <td>{{i.order}}</td>
+
+    </tr>
+
+  </tbody>
+    {% endfor %}
+
+</table>
+
+
+{% endblock %}
+
