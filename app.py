@@ -16,7 +16,7 @@ Ema = ""
 def login():
 	global Ema
 	global Login
-	
+
 	if(request.method=="POST"):
 		email=request.form["email"]
 		password=request.form["password"]
@@ -70,7 +70,6 @@ def addOrder():
 	if(request.method=="POST"):
 		email=request.form["email"]
 		address=request.form["address"]
-		#phone=request.form["phone"]
 		order=request.form["order"]
 		ordersDB.insert(dict(email=email,address=address,order=order))
 		return redirect('/orders')

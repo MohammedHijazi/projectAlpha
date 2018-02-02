@@ -2,7 +2,6 @@ alembic
 click
 dataset
 Flask
-Flask-WTF
 gunicorn
 itsdangerous
 Jinja2
