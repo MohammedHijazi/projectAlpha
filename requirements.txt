@@ -15,5 +15,5 @@ six
 SQLAlchemy
 Werkzeug
 WTForms
-Redirect
+redirect
 dataset
